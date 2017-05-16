@@ -1,2 +1,14 @@
 *.docx
 README.txt
+*.sln
+*.config
+*.cs
+*csproj
+*.Designer.cs
+*resx
+*.exe.config
+*.pdb
+*.vshost.exe
+*.vshost.exe.config
+*.vshost.exe.manifest
+Calculator
