@@ -1,0 +1,76 @@
+<DOCTYPE! html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<html>
+
+<head>
+	<script src="JS/script.js"></script>
+</head>
+
+<body>
+	<!-- Navigation -->
+	<nav class="we-bar w3-black">
+		<div id="bar">
+			<a href="home.html" class="w3-button w3-bar-item">Home</a>
+			<a href="band.html" class="w3-button w3-bar-item">Band</a>
+			<a href="contact.html" class="w3-button w3-bar-item">Contact</a>
+		</div>
+	</nav>
+	
+	<!-- Slide Show -->
+	<section>
+		<img class="mySlides" src="pot.jpg" style="width:100%">
+		<img class="mySlides" src="albion.jpg" style="width:100%">
+		<img class="mySlides" src="band.jpg" style="width:100%">
+	</section>
+	
+	<!-- Band Description -->
+	<section class="w3-container w3-center w3-content" style="max-width:600px">
+		<h2 class="w3-wide">Sillage</h2>
+		<p class="w3-opacity"><i>We love music</i></p>
+		<p class="w3-justify">
+			Pentru noi, întâi de toate contează echipa. Lucrăm, creăm, petrecem o mulțime de timp împreună și împărțim aceleași emoții. Ne-am dedicat în totalitate muzicii și formației noastre, iar uneori stăm zile întregi în sala de repetiții. Cele mai plăcute momente sunt cele de creație, în care lucrăm cu înflăcărare. Suntem mereu conviși că ultima piesă e mai WOW decât cea precedentă, iar deplasările trupei la festivaluri și concerte, care abia încep în viața colectivului nostru, sunt experiențe într-adevăr amuzante și prețioase.
+		</p>
+		<p class="w3-justify">
+			Ne diferențiem prin gusturile muzicale și credem că asta e formidabil, pentru că reușim să creem ceva unic prin asta. Am spune că astfel ne completăm și diversificăm repertoriul nostru : uneori mergem până la extreme – de la stilurile greoaie până la cele ușoare, cosmice sau săltărețe. În playlistul nostru se găsesc Tool, God Is An Astronaut, Karnivool, Anouk, Dream Theatre, Coldplay, Porcupine Tree și Dredg.
+		</p>
+		<p class="w3-justify">
+			Piesele încep de la stări, asta e rețeta din totdeauna a muzicii. Ai un mesaj sau o stare și începi s-o printezi prin sunete – e un proces aproape meditativ. La texte se lucrează mult. În texte punem în valoare omul și lupta cu sinele. Totuși nu avem o direcție spre care tindem, mesajele variază mult în funcție de ce ni se întâmplă.
+		</p>
+		<p class="w3-justify">
+			Deși credem că nu am trăit încă cel mai „măreț” moment din cariera noastră muzicală, trăim zilnic chestii frumoase și amuzante. În general, în trupa noastră se combină mereu umorul și visele, iar din asta apar situațiile amuzante. A fost memorabilă pentru noi pregătirea pentru POT, pentru că am lucrat profesionist și cu mult patos. Serile în care mâncam kebab împreună, ne îndopam cu ceai și ne scurgeam de off-uri sunt într-adevăr de neuitat. Cu siguranță, dacă ne veți mai întreba peste ceva timp, vom avea la sigur ce să adăugăm.
+		</p>
+		<p class="w3-justify">
+			Si||age avea nevoie să iasă în fața publicului care ascultă muzică alternativă, voiam să arătăm și să trasmitem vibe-ul nostru mulțimii. POT ne-a oferit acest lucru. Ei reușesc mereu să unească iubitorii de underground, iar în prima semifinală erau mulți și foarte însetați de acesta. Ne-am dat seama că trupele tinere pot forma și dezvolta cultura concertelor rock și în general cultura rock, și pe viitor asta vrem să facem alături de alte trupe participante, cu alți participanți ce au reușit deja să devină prietenii noștri.
+		</p>
+		<p class="w3-justify">
+			Fani) Sună prea distant. Cei cărora le-am plăcut și căror le-a fost aproape muzica noastră, ne sunt prieteni. Vrem să le spunem un mare MULȚUMESC și ne dorim să fie alături, pentru că urmează o vară și un an plin de impresii din partea noastră. Am dori să ne apropiem și cu alte formații din Chișinău,  să dezvoltăm împreună curentul underground din Moldova. De asemenea, le dorim mult spor și inspirație!
+		</p>
+	</section>
+	
+	<!-- Footer -->
+	<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+	</footer>
+	
+	<script>
+	// Automatic Slideshow - change image every 3 seconds
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++)
+				x[i].style.display = "none";
+			myIndex++;
+			if (myIndex > x.length) 
+				myIndex = 1
+			x[myIndex-1].style.display = "block";
+			setTimeout(carousel, 3000);
+		}
+	</script>
+	
+</body>
+
+</html>
