@@ -1,0 +1,81 @@
+<DOCTYPE! html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<html>
+
+<head>
+	<script src="JS/script.js"></script>
+</head>
+
+<body>
+	<!-- Navigation -->
+	<nav class="we-bar w3-black">
+		<div id="bar">
+			<a href="home.html" class="w3-button w3-bar-item">Home</a>
+			<a href="band.html" class="w3-button w3-bar-item">Band</a>
+			<a href="contact.html" class="w3-button w3-bar-item">Contact</a>
+		</div>
+	</nav>
+	
+	<!-- Slide Show -->
+	<section>
+		<img class="mySlides" src="pot.jpg" style="width:100%">
+		<img class="mySlides" src="albion.jpg" style="width:100%">
+		<img class="mySlides" src="band.jpg" style="width:100%">
+	</section>
+	
+	<section class="w3-container w3-center w3-content" style="max-width:600px">
+		<h2 class="w3-wide">Sillage</h2>
+		<p class="w3-opacity"><i>We love music</i></p>
+	</section>
+	
+	<!-- Band Members -->
+	<section class="w3-row-padding w3-center w3-light-grey">
+		<article class="w3-quarter">
+			<p>Mihaela</p>
+			<img src="mihaela.jpg" alt="Random Name" style="width:100%">
+			<p>Voce</p>
+		</article>
+		<article class="w3-quarter">
+			<p>Adrian</p>
+			<img src="adrian.jpg" alt="Random Name" style="width:100%">
+			<p>Tobe</p>
+		</article>
+		<article class="w3-quarter">
+			<p>Victor</p>
+			<img src="victor.jpg" alt="Random Name" style="width:100%">
+			<p>Bass</p>
+		</article>
+		<article class="w3-quarter">
+			<p>Denis</p>
+			<img src="denis.jpg" alt="Random Name" style="width:100%">
+			<p>Chitara</p>
+		</article>
+	</section>
+	
+	<!-- Footer -->
+	<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+	</footer>
+	
+	<script>
+	// Automatic Slideshow - change image every 3 seconds
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++)
+				x[i].style.display = "none";
+			myIndex++;
+			if (myIndex > x.length) 
+				myIndex = 1
+			x[myIndex-1].style.display = "block";
+			setTimeout(carousel, 3000);
+		}
+	</script>
+	
+</body>
+
+</html>
