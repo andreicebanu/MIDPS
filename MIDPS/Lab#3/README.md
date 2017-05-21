@@ -1,0 +1,1 @@
+In lucrarea data am efectuat un site cu 3 pagini statice, ca prezentare a unei Music Band. Am efectuat site-ul in HTML, cu implementarea JavaScript. Am adaugat informatie despre aceasta formatie muzicala, poze si date de contact
