@@ -1,0 +1,71 @@
+
+
+import UIKit
+
+class
+
+AddNewSong_TableViewCell: UITableViewCell {
+
+
+
+var Song_Class: AddNewSong_Class?
+
+@IBOutlet weak var icon_song: UIImageView!  // variabila pentru salvarea imaginii
+
+@IBOutlet weak var name_song: UILabel!      // variabila pentru salvareaa numelui sunetului
+
+@IBOutlet weak var slider: UISlider!        // salveaza valoarea volumului
+    
+   
+
+var index = Int()
+
+var del_index = Int()
+
+
+//    sliderul in dependenta in ce pozitie se afla se mareste sau micsoreaza volumul
+
+@IBAction func slider_volum(_ sender: UISlider) {
+
+audioPL[index].volume = sender.value
+
+}
+
+
+
+//    butonul pentru a sterge sunedul din fiecare celula in parte
+
+
+@IBAction func dell_but(_ sender: UIButton) {
+
+audioPL[index].pause()
+
+audioPL[index].currentTime = 0
+
+audioPL[index].volume = 0.5
+
+ListPlay.remove(at: del_index)
+
+Song_Class?.table.reloadData()
+
+}
+
+
+
+//    functii standart
+
+override func awakeFromNib(){
+
+super.awakeFromNib()
+
+}
+
+
+
+override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+}
+
+
+}
